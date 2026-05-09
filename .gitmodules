@@ -1,0 +1,15 @@
+[submodule "chapters/01-stochastic-calculus"]
+	path = chapters/01-stochastic-calculus
+	url = git@github.com:suenot/001-stochastic-calculus.git
+[submodule "chapters/02-market-microstructure"]
+	path = chapters/02-market-microstructure
+	url = git@github.com:suenot/002-market-microstructure.git
+[submodule "chapters/03-portfolio-optimization"]
+	path = chapters/03-portfolio-optimization
+	url = git@github.com:suenot/003-portfolio-optimization.git
+[submodule "chapters/04-ml-time-series"]
+	path = chapters/04-ml-time-series
+	url = git@github.com:suenot/004-ml-time-series.git
+[submodule "chapters/05-low-latency-systems"]
+	path = chapters/05-low-latency-systems
+	url = git@github.com:suenot/005-low-latency-systems.git
