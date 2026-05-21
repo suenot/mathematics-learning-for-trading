@@ -1,0 +1,52 @@
+---
+title: Mathematics for Trading
+description: Practical Guide to Mathematics in Algorithmic Trading — 5 in-depth chapters
+template: splash
+hero:
+  tagline: A comprehensive practical guide connecting mathematical theory with production-ready code for algorithmic trading systems.
+  image:
+    file: ../../assets/hero.svg
+  actions:
+    - text: Start Reading
+      link: /chapters/01-stochastic-calculus/001-stochastic-calculus/
+      icon: right-arrow
+      variant: primary
+    - text: GitHub
+      link: https://github.com/suenot/mathematics-learning-for-trading
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 5 Core Chapters
+
+<CardGrid>
+  <Card title="Stochastic Calculus" icon="open-book">
+    Brownian motion, Itô's lemma, SDEs, GBM, Heston model, jump-diffusion, numerical methods (Euler-Maruyama, Milstein). Monte Carlo in Rust with SIMD.
+  </Card>
+  <Card title="Market Microstructure" icon="rocket">
+    Limit Order Book anatomy, point processes (Poisson, Hawkes), Cont-Stoikov-Talreja model, Avellaneda-Stoikov optimal market making. Market making bot in Rust + WebSocket.
+  </Card>
+  <Card title="Portfolio Optimization" icon="star">
+    Mean-Variance (Markowitz), covariance shrinkage, Risk Parity, HRP, NCO. VaR, CVaR, Maximum Drawdown. Portfolio optimizer in Rust with convex solvers.
+  </Card>
+  <Card title="ML for Time Series" icon="puzzle">
+    Feature engineering, LSTM, GRU, Transformer, TFT, volatility forecasting, Reinforcement Learning for trading. ONNX inference in Rust, RL trading agent.
+  </Card>
+  <Card title="Low Latency Systems" icon="setting">
+    Ultra-low-latency architecture, memory management, lock-free data structures, TCP tuning, io_uring, CPU affinity, profiling. Production trading system in Rust.
+  </Card>
+</CardGrid>
+
+## Tech Stack
+
+Every chapter includes production-ready code:
+- **Rust** — primary implementation language, high-performance core
+- **Julia** — research and rapid prototyping, SDE solvers
+- **Python** — ML/DL workflows, PyTorch, scikit-learn, pandas
+
+## Prerequisites
+
+- Calculus and linear algebra
+- Probability theory basics
+- Intermediate programming experience (any language)

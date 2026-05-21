@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="none"/>
+  <!-- Stochastic process / Brownian motion path -->
+  <polyline points="20,200 40,185 60,195 80,165 100,175 120,145 140,160 160,130 180,145 200,110 220,125 240,95 260,115 280,85 300,100 320,70 340,90 360,60 380,75"
+    fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Secondary path (volatility) -->
+  <polyline points="20,220 40,215 60,225 80,205 100,215 120,195 140,205 160,185 180,195 200,175 220,185 240,165 260,180 280,160 300,170 320,150 340,165 360,145 380,155"
+    fill="none" stroke="#c4b5fd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <!-- Confidence band (top) -->
+  <polyline points="20,165 60,155 100,140 140,125 180,115 220,100 260,85 300,75 340,65 380,55"
+    fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
+  <!-- Confidence band (bottom) -->
+  <polyline points="20,235 60,240 100,230 140,220 180,210 220,205 260,195 300,185 340,180 380,170"
+    fill="none" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
+  <!-- Math formula labels (simplified) -->
+  <text x="25" y="55" font-family="monospace" font-size="11" fill="#7c3aed" opacity="0.7">dS = μS dt + σS dW</text>
+  <text x="25" y="72" font-family="monospace" font-size="10" fill="#c4b5fd" opacity="0.55">E[S_t] = S_0 · e^(μt)</text>
+  <!-- Portfolio/matrix hint -->
+  <rect x="310" y="185" width="70" height="60" rx="4" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <text x="318" y="203" font-family="monospace" font-size="9" fill="#c4b5fd" opacity="0.7">Σ = V·D·Vᵀ</text>
+  <text x="318" y="218" font-family="monospace" font-size="9" fill="#c4b5fd" opacity="0.7">w* = Σ⁻¹μ/λ</text>
+  <text x="318" y="233" font-family="monospace" font-size="9" fill="#c4b5fd" opacity="0.7">VaR₉₅%</text>
+  <!-- Dots representing data points -->
+  <circle cx="80" cy="165" r="3" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="160" cy="130" r="3" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="240" cy="95" r="3" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="320" cy="70" r="3" fill="#7c3aed" opacity="0.8"/>
+</svg>

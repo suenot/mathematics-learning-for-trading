@@ -1,0 +1,52 @@
+---
+title: Математика для Алготрейдеров
+description: Практическое руководство по применению математики в алгоритмической торговле — 5 глав
+template: splash
+hero:
+  tagline: Исчерпывающее практическое руководство, связывающее математическую теорию с production-ready кодом для алгоритмических торговых систем.
+  image:
+    file: ../../../assets/hero.svg
+  actions:
+    - text: Начать читать
+      link: /ru/chapters/01-stochastic-calculus/001-stochastic-calculus/
+      icon: right-arrow
+      variant: primary
+    - text: GitHub
+      link: https://github.com/suenot/mathematics-learning-for-trading
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 5 основных глав
+
+<CardGrid>
+  <Card title="Стохастическое исчисление" icon="open-book">
+    Броуновское движение, лемма Ито, SDE, GBM, модель Хестона, jump-diffusion, численные методы (Euler-Maruyama, Milstein). Monte Carlo на Rust с SIMD.
+  </Card>
+  <Card title="Микроструктура рынка" icon="rocket">
+    Анатомия Limit Order Book, точечные процессы (Пуассон, Хокс), модель Cont-Stoikov-Talreja, оптимальный маркет-мейкинг Avellaneda-Stoikov. Бот на Rust + WebSocket.
+  </Card>
+  <Card title="Портфельная оптимизация" icon="star">
+    Mean-Variance (Markowitz), сжатие ковариаций, Risk Parity, HRP, NCO. VaR, CVaR, Maximum Drawdown. Оптимизатор портфеля на Rust с convex solvers.
+  </Card>
+  <Card title="ML для временных рядов" icon="puzzle">
+    Feature engineering, LSTM, GRU, Transformer, TFT, прогнозирование волатильности, Reinforcement Learning. ONNX inference на Rust, RL торговый агент.
+  </Card>
+  <Card title="Системы низкой задержки" icon="setting">
+    Ultra-low-latency архитектура, управление памятью, lock-free структуры данных, TCP tuning, io_uring, CPU affinity, профилирование. Production система на Rust.
+  </Card>
+</CardGrid>
+
+## Технологический стек
+
+Каждая глава содержит production-ready код:
+- **Rust** — основной язык реализации, высокопроизводительное ядро
+- **Julia** — исследования и прототипирование, SDE solvers
+- **Python** — ML/DL, PyTorch, scikit-learn, pandas
+
+## Предварительные требования
+
+- Математический анализ и линейная алгебра
+- Основы теории вероятностей
+- Опыт программирования (любой язык)
