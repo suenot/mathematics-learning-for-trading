@@ -9,8 +9,10 @@
     "sync": "node sync-content.mjs"
   },
   "dependencies": {
+    "@astrojs/starlight": "0.28.6",
     "astro": "4.16.19",
-    "@astrojs/starlight": "0.28.6"
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "overrides": {
     "@astrojs/sitemap": "3.5.1"

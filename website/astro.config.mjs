@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const isGitHubPages = !!process.env.GITHUB_PAGES;
 
@@ -50,6 +52,10 @@ const sidebar = [
 export default defineConfig({
   site: isGitHubPages ? 'https://suenot.github.io' : 'https://suenot.com',
   ...(isGitHubPages && { base: '/mathematics-learning-for-trading-website' }),
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
+  },
   integrations: [
     starlight({
       title: 'Mathematics for Trading',
@@ -62,6 +68,16 @@ export default defineConfig({
       social: {
         github: 'https://github.com/suenot/mathematics-learning-for-trading',
       },
+      head: [
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+            crossorigin: 'anonymous',
+          },
+        },
+      ],
       defaultLocale: 'root',
       locales: {
         root: {
